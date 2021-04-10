@@ -20,9 +20,14 @@
     text-align: center;
 
     p{
-        font-size: .8em;
+        font-size: .6em;
         color: $text-color;
         font-weight: bold;
+
+        @include for-desktop-up {    
+           font-size: .8em;
+      
+           }
     }
 
     .item__text{
