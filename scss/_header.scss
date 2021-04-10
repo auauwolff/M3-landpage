@@ -1,0 +1,43 @@
+/*========== HEADER ==========*/
+.advantages__list{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 2em;
+
+        @include for-tablet-landscape-up {    
+           margin: 2em 7em;
+    
+         }
+
+         @include for-desktop-up {    
+           justify-content: space-evenly;
+     
+          }
+}
+
+.advantages__item{
+    text-align: center;
+
+    p{
+        font-size: .6em;
+        color: $text-color;
+        font-weight: bold;
+    }
+
+    .item__text{
+        padding-top: .6em ;
+    }
+
+    @include for-desktop-up {    
+       display: flex;
+       align-items: center;
+        img {
+           width: 3em;
+        }
+
+        p{
+            margin-left: 1em;
+        }
+    }
+}

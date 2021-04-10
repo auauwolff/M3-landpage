@@ -1,0 +1,54 @@
+/*========== HERO ==========*/
+
+.hero__content{
+  width: 100%;
+  
+}
+.hero__img{
+    position: relative; 
+    width: 100%;
+    height: 70vh; 
+    background-position: cover;
+    object-fit: cover;
+    background-repeat: no-repeat;
+    object-position:  40% 50%;
+   
+}
+
+ .hero__title{ 
+    position: absolute; 
+    top: 250px; 
+    left: 25%; 
+    color: $title-color; 
+    font-size: $h1-font-size;
+    text-shadow: 1px 1px rgba(0, 0, 0, 0.63);
+
+               @include for-tablet-landscape-up {    
+                  left: 50%;
+               }
+
+               @include for-desktop-up {    
+                  font-size: 3.2em;
+                  
+               }
+ }
+
+ .hero__subtitle{ 
+    position: absolute; 
+    top: 340px; 
+    left: 25%; 
+    color: $title-color; 
+    font-size: $h3-font-size; 
+    text-shadow: 1px 1px rgba(0, 0, 0, 0.63);
+    padding-right: 1em;
+
+            @include for-tablet-landscape-up {    
+               left: 50%;
+               
+            }
+
+            @include for-desktop-up {    
+               font-size: 1.1em;
+               top: 380px;
+            }
+ }

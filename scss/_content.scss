@@ -1,0 +1,304 @@
+/*========== CONTENT ==========*/
+
+.content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 1em 0 3.5em;
+
+
+    /*========== DESKTOP MEDIA ==========*/
+    @include for-desktop-up {    
+        margin-bottom: -12em;
+        display: grid;
+        grid-template-columns: 40% 1fr 15%;
+        grid-template-rows: 15% 20% 5% 6% 20%;
+        
+
+        .content__img{
+            grid-column-start: 1;
+            grid-row-start: 1 / 3;
+            justify-self: center;
+            align-self: start;
+        }
+        .chair__types {
+            grid-column-start: 1;
+            grid-row-start: 5;
+            align-self: start;
+            justify-self: start;
+        }
+
+        .content__title{
+            grid-column-start: 2;
+            grid-row-start: 1;
+            align-self: center;
+            margin-top: 2.2em;
+        }
+
+        .content__price{
+            grid-column-start: 2;
+            grid-row-start: 1;
+            align-self: end;
+        }
+
+        .content__description{
+            grid-column-start: 2;
+            grid-row-start: 2;
+            align-self: start;
+            padding-right: 4em;
+        }
+
+        .chair__colors{
+            grid-column-start: 2;
+            grid-row-start: 2;
+            align-self: end;
+            margin: 0;
+           
+        }
+        .content__color-name{
+            grid-column-start: 2;
+            grid-row-start: 2;
+           justify-self: end;
+           align-self: end;
+           padding: 1.2em 18em .5em 0em;
+        }
+
+        .button__addcart{
+            grid-column-start: 2;
+            grid-row-start: 3;
+            align-self: start;
+            justify-self: start;
+        }
+
+        .content__specification{
+            grid-column-start: 2;
+            grid-row-start: 4;
+            align-self: start;
+            justify-self: start;
+        }
+
+        .content__call-action{
+            grid-column-start: 3;
+            grid-row-start: 1 / 2;
+            align-self: start;
+            justify-self: start;
+            margin-top: 3.5em;
+        }
+     }
+}
+
+
+/*========== COLOR PICK ==========*/
+.chair__colors{
+    margin: 1em 0;
+    button{
+        width: 25px;
+        &:focus { 
+            outline: none 
+        }
+    }
+    img{
+        width: 100%;
+    }
+}
+
+/*========== CHAIR NAV ==========*/
+.chair__types{
+    width: 100%;
+    margin: 3em 0;
+
+}
+
+/*========== CONTENT TITLE ==========*/
+
+.content__title{
+    font-size: $h2-font-size;
+    color: $text-color;
+    margin-top: 2em;
+    
+}
+
+.content__price{
+    font-size: 1.8em;
+    color: $price-color;
+}
+
+.content__call-action{
+    display: flex;
+    margin: 2em 0;
+   
+    @include for-desktop-up {  
+        display: block; 
+    }
+}
+
+/*========== CONTENT BUTTON ==========*/
+
+.content__action-button{
+    display: flex;
+    align-items: center;
+    background-color: $button-color;
+    padding: .6em 1em;
+    margin: 3em 1em;
+    font-size: $small-font-size;
+    font-weight: bold;
+    cursor: pointer;
+
+    span{
+        margin-left: 5px;
+    }
+
+    @include for-desktop-up {  
+        margin: 3em 0;
+    }
+}
+
+.button__addcart{
+    display: flex;
+    align-items: center;
+    background-color: $button-color;
+    padding: .6em 1em;
+    margin: 3em 1em;
+    font-size: $small-font-size;
+    font-weight: bold;
+    cursor: pointer;
+    
+    @include for-desktop-up {  
+        margin: 1em 0
+     }
+
+    span{
+        font-size: $normal-font-size;
+        padding: .1em 5em;
+    }
+}
+
+
+/*========== CONTENT DESCRIPTION ==========*/
+
+.content__description{
+    margin: 0 2em;
+    text-align: justify;
+    font-size: $normal-font-size;
+    
+    @include for-desktop-up {  
+       margin: 0;
+    }
+}
+
+
+.content__specification-button{
+    width: 100%;
+    height: 10%;
+    outline: none;
+    text-align: left;
+    padding: 2em 1em 1em;
+    cursor: pointer;
+    transition: background-color 0.2s linear;
+    font-weight: bold;
+    animation-name: anim1;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+
+                @include for-tablet-landscape-up {    
+                    padding: 2em 2em 1em;
+                }
+
+                @include for-desktop-up {  
+                   padding: 2em 0 1em;
+                }
+
+        &::after{
+            content: "\f105";
+            color: #0C687A;
+            font-family: "fontawesome";
+            font-size: 20px;
+            float: right;
+        }
+        
+        &.is-open::after { 
+            content: "\f107"; 
+           
+        }
+
+} 
+
+.content__specification-description{
+    width: 100%;
+    margin: -1em 0em;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-in-out;
+    text-align: left;
+    padding: 0em 2em;
+    font-size: $small-font-size;
+      
+}
+
+.specification__itens{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.specification__item{
+    grid-column-start: 1;
+}
+
+.specification__descrip{
+    grid-column-start: 2;
+}
+
+
+.specification__item{
+        padding: .3em 0;
+        text-align: justify;
+    }
+    .specification__descrip{
+        padding: .5em 0 0;
+        text-align: justify;
+    }
+
+ 
+    
+/*========== SLICK SLIDE ==========*/
+   .chair__type{
+    width: 300px;
+       @include for-desktop-up {  
+            width: 500px;
+            top: 150px;
+        }
+
+    }
+
+    @include for-desktop-up {  
+        .chair__types{
+            display: flex;
+        }
+        
+        .slick-prev{
+            font-size: 0;
+            &:focus{
+                outline: none;
+            }
+        }
+        .slick-next{
+            font-size: 0;
+            &:focus{
+                outline: none;
+            }
+        }
+        
+        .slick-prev:before {
+            content: "<";
+            color: #0C687A;;
+            font-size: 30px;
+          }
+
+        .slick-next:before {
+            content: ">";
+            color: #0C687A;;
+            font-size: 30px;
+          }
+    }
+
+   

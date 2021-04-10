@@ -1,0 +1,78 @@
+/*========== FOOTER ==========*/
+
+footer{
+    padding: 4em 0em 2em;
+    background-color: #0C687A;
+    color: $title-color;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+            
+    img{
+        width: 20%;
+    }
+
+            
+}
+
+
+.footer__title{
+    font-size: $h2-font-size;
+    font-weight: bold;
+    padding: 0 4em;
+}
+
+.footer__item{
+    margin: 5em 2em;
+    font-size: $normal-font-size;
+    font-weight: bold;
+               
+                @include for-tablet-landscape-up {    
+                   margin: 5em;
+                }
+
+                @include for-desktop-up { 
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    text-align: center;
+                    align-self: center;
+                    align-items: center;
+                    padding: 5em 2em ;
+                    margin: 0;
+
+                    .money_img{
+                        width: 50%;
+                    }
+                    .warranty_img{
+                        width: 30%;
+                    }
+                    .freeship_img{
+                        width: 50%;
+                    }
+                }
+     
+        a{
+            color: #EFC9AF;
+        
+        }
+
+        p{
+            margin: 1em;
+            @include for-desktop-up { 
+                width: 100%;
+            }
+        }
+}
+
+.footer__item-title{
+    font-size: 16rem;
+}
+
+
+@include for-desktop-up { 
+    .footer__list{
+        display: flex;
+    }
+}

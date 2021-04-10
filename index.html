@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--========== FONT AWESOME ==========-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!--========== SLICK SLIDE - SLIDER ==========-->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <!--========== CSS ==========-->
+    <link rel="stylesheet" href="css/style.css">
+    <title>Magic Chair</title>
+</head>
+<body>
+     <!--========== HEADER ==========-->
+     <header>
+         <section class="advantages__header">
+             <div class="advantages" >
+                 <ul class="advantages__list">
+                     <li class="advantages__item">
+                         <img src="/img/Truck.svg" alt="delivery-truck"> 
+                         <p>Free Shipping*</p>
+                     </li>
+                     <li class="advantages__item">
+                        <img src="/img/Warranty.svg" alt="3-year-Warranty"> 
+                        <p class="item__text">3-Year Warranty</p>
+                    </li>
+                    <li class="advantages__item">
+                        <img src="/img/Dollar.svg" alt="Buy now Pay Later">
+                        <p class="item__text">Buy Now, Pay Later</p> 
+                    </li>
+                 </ul>
+             </div>
+         </section>
+     </header>
+    
+     <main class="l__container">
+     <!--========== HERO SECTION ==========-->
+     <section class="hero">
+         <div class="hero__content">
+         <img src="/img/hero-banner.jpg" alt="Hero banner Chair" class="hero__img">
+         <h1 class="hero__title"> DESIGNED <br> FOR WELLNESS</h1>
+         <h3 class="hero__subtitle">Sophisticated luxury in the comfort of your home</h3>
+        </div>
+     </section>
+
+     <!--========== CONTENT ==========-->
+     <section class="content">
+
+         <div class="chair__type">
+         <img src="/img/black-slider.svg" alt="black-chair" class="content__img" id= "colors">
+         <img src="/img/champagne.svg" alt="black-chair" class="content__img" >
+         <img src="/img/grey-slider.svg" alt="black-chair" class="content__img" >
+         <img src="/img/frontside-slider.svg" alt="black-chair" class="content__img" >
+         <img src="/img/side-slider.svg" alt="black-chair" class="content__img" >
+         <img src="/img/front-slider.svg" alt="black-chair" class="content__img" >
+         <img src="/img/black-slider.svg" alt="black-chair" class="content__img" >
+        </div>
+
+        <!--========== CHANGE SPAN ACCORDINGLY WITH COLOR CHOSE ==========-->
+         <div class="chair__colors " id="chairs" >
+            <button onclick= "change()"><img src="/img/black-color.jpg" alt=""></button>
+            <button onclick= "change1()"><img src="/img/pink-color.jpg" alt=""></button>
+            <button onclick = "change2()"> <img src="/img/grey-color.jpg" alt=""></button>
+            <button onclick = "change3()"> <img src="/img/rose-color.jpg" alt=""></button>   
+         </div>
+         <div class="content__color-name" id="color-name"><span>Black</span>
+        </div>
+
+        <!--========== SLIDER NAV ==========-->
+        <div class="chair__types">  
+            <img src="/img/black-slider.svg" alt="" class="chair__types-img">
+            <img src="/img/champagne-slider.svg" alt="" class="chair__types-img">
+            <img src="/img/grey-slider.svg" alt="" class="chair__types-img">
+            <img src="/img/frontside-slider.svg" alt="" class="chair__types-img">
+            <img src="/img/side-slider.svg" alt="" class="chair__types-img">
+            <img src="/img/front-slider.svg" alt="" class="chair__types-img">
+        </div>
+
+         <h1 class="content__title">
+            THERAPEUTIC DUAL-PRO™
+         </h1>
+         <h2 class="content__price">
+            $17,995
+         </h2>
+
+         <div class="content__call-action">
+            <div class="content__action-button">
+                <img src="/img/call.svg" alt="" class="content__action-button-call">
+                <span>CALL 1300 054 554</span> 
+            </div>
+            <div class="content__action-button">
+                <img src="/img/shopping-cart.svg" alt="" class="content__action-button-shopping">
+                <span>Get best price now</span> 
+            </div>
+         </div>
+
+         <div class="content__description">
+             <p class="content__description-product">
+                The Therapeutic Dual-Pro™ brings breakthrough massage chair technology to your home, giving you an immersive and luxurious massage experience on demand. Superior engineering matched with modern design marks the Therapeutic Dual-Pro™ as the ultimate massage chair that will unlock a happier and healthier you. 
+                <br><br>
+                Highlights include an evolved rail technology that adjusts to follow the curve of your spine, 4D dual-action massage hands for human-like touch and 12 automatic massage treatments. 
+             </p>
+         </div>
+
+         <div class="button__addcart">
+            <span>ADD TO CART</span> 
+        </div>
+
+         <div class="content__specification">
+             <button class="content__specification-button">Specifications</button>
+             <div class="content__specification-description">
+                 <div class="specification__itens">
+                        <div class="specification__item">Power</div>
+                        <div class="specification__descrip">180 watts</div> 
+                        <div class="specification__item">Upright size </div> 
+                        <div class="specification__descrip">170cm (L) x 85cm (W) x 125cm (H)</div>  
+                        <div class="specification__item">Reclined size</div> 
+                        
+                        <div class="specification__descrip">205cm (L) x 85cm (W) x 83cm (H)</div> 
+                        <div class="specification__item">Box size</div>
+                        <div class="specification__descrip">137cm (L) x 85cm (W) x 123cm (H)
+                            This chair is delivered in a box. Please note these measurements when you are collecting the chair from a transport depot to place in your vehicle and moving it through your front or back door.</div>
+                        <div class="specification__item"> Packing size </div>
+                        <div class="specification__descrip">Mainframe:
+                            160cm (L) x 85cm (W) x 88.5cm (H)<br>Lower leg:
+                            56cm (L) x 54cm (W) x 61cm (H)<br>Handrail:
+                            56cm (L) x 54cm (W) x 61cm (H)</div>
+
+                        <div class="specification__item">Net weight </div>
+                        <div class="specification__descrip">169kg</div>
+                        <div class="specification__item"> Gross weight </div>
+                        <div class="specification__descrip">204kg</div>
+                 </div>
+             </div>
+             <button class="content__specification-button">Fit</button>
+             <div class="content__specification-description">
+                 Do you like what you see !? :)
+             </div>
+         </div>
+     </section>
+
+     <!--========== FOOTER ==========-->
+     <footer>
+         <h1 class="footer__title"> Why Masseuse Massage Chairs? </h1>
+         <div class="l-container" >
+            <ul class="footer__list">
+                <li class="footer__item">
+                    <img src="/img/footer-money-back.svg" alt="money-back" class="money_img"> 
+                    <p class="footer__item-title">30-Day Money Back Guarantee</p>
+                    <p>Buy with peace of mind and enjoy the benefits of a massage chair in your home risk free for 30 days. </p>
+                    <a href="#">FIND OUT MORE</a>
+                </li>
+                <li class="footer__item">
+                   <img src="/img/footer-3-year.svg" alt="3-year-Warranty" class="warranty_img"> 
+                   <p class="footer__item-title">Complimentary 3-Year Warranty</p>
+                   <p>Industry-leading 3-year warranty is free with all our massage chairs. Our products are of superior quality and that’s why we offer the best warranty policy.</p>
+                   <a href="#">FIND OUT MORE</a>
+               </li>
+               <li class="footer__item">
+                    <img src="/img/footer-truck.svg" alt="free shipping" class="freeship_img"> 
+                    <p class="footer__item-title">Free Shipping</p>
+                    <p>We have a wide delivery service network within Australia and offer free delivery to all metro areas. </p>
+                <a href="#">FIND OUT MORE</a>
+            </li>
+            </ul>
+        </div>
+     </footer>
+
+    </main>
+
+    <!--========== SLICK SLIDE ==========-->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+     <!--========== MAIN JS ==========-->
+    <script src="/javascript/main.js"></script>
+    
+</body>
+</html>
